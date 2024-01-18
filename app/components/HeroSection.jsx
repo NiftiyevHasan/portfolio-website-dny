@@ -37,8 +37,8 @@ const HeroSection = () => {
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             I&apos;m a product designer with a background in Interior Design
-            based in San Francisco Bay Area. I'm passionate about creating user
-            centered products.
+            based in San Francisco Bay Area. I&apos;m passionate about creating
+            user centered products.
           </p>
           <div>
             <button className="px-6 py-3 w-full inline-block sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white">
