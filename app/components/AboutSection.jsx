@@ -43,11 +43,16 @@ const AboutSection = () => {
   return (
     <section className="text-white ">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 sm:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image
+          src="/images/about-image.png"
+          alt="about image"
+          width={500}
+          height={500}
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-lg">
-            I'm a passionate product designer with a unique edge—a strong
+            I&apos;m a passionate product designer with a unique edge—a strong
             background in digital marketing. My journey into the world of user
             experience began with a fascination for understanding how consumers
             interact with digital products and services. As a former digital
