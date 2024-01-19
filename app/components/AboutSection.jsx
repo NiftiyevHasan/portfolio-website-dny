@@ -5,6 +5,8 @@ import TabButton from "./TabButton";
 
 const tabs = [
   { id: "skills", label: "Skills" },
+  { id: "tools", label: "Tools" },
+  { id: "research", label: "Research" },
   { id: "education", label: "Education" },
   { id: "certification", label: "Certification" },
 ];
@@ -23,6 +25,31 @@ const tabContent = {
     "Digital Strategy",
     "Visual Design",
     "Data Analysis",
+  ],
+  tools: [
+    "Figma",
+    "Adobe",
+    "FigJam",
+    "Webflow",
+    "Marvel",
+    "POP",
+    "Miro",
+    "Asana",
+    "Notion",
+    "Adobe Photoshop",
+    "3Ds Max & Vray",
+    "AutoCAD",
+    "Revit",
+    "Sketchup",
+  ],
+  research: [
+    "Heuristic & Competitive Analyses",
+    "Card Sorting & A/B Testing",
+    "User Research",
+    "Interviews & Personas",
+    "Product Validation & Usability Testing",
+    "Agile methodologies",
+    "Cross-functional collaboration",
   ],
   education: [
     "Springboard, UX Design Career Track Certification, 2022-2023",
@@ -44,6 +71,7 @@ const AboutSection = () => {
     <section className="text-white ">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 sm:px-16">
         <Image
+          className="rounded-md"
           src="/images/about-image.png"
           alt="about image"
           width={500}
@@ -52,7 +80,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-lg">
-            I&apos;m a passionate product designer with a unique edge—a strong
+            I&apos;m a passionate product designer with a unique edge a strong
             background in digital marketing. My journey into the world of user
             experience began with a fascination for understanding how consumers
             interact with digital products and services. As a former digital
