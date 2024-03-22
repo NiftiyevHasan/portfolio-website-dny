@@ -1,58 +1,29 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-const projectData = [
-  {
-    id: 1,
-    title: "CarGo",
-    description:
-      "Car-Go app is a creative industry startup that allows people to ship their needs.",
-    image: "/images/projects/CarGo.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 2,
-    title: "Pocket",
-    description: "Help people to get better subscription tracking experience.",
-    image: "/images/projects/PocketApp.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "House2Home",
-    description: "E-commerce app for interior design",
-    image: "/images/projects/House2Home.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "REFit",
-    description: "REFit Refrigerant Management is a record keeping software",
-    image: "/images/projects/REFit.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-];
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
+  const [projects, setProjects] = useState([]);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    fetch("/data/projects.json")
+      .then((response) => response.json())
+      .then((data) => setProjects(data));
+  }, []);
+
+  const filteredProjects = projects.filter((project) =>
+    tag === "All" ? true : project.tag.includes(tag)
+  );
+
   const handleTagChange = (newTag) => {
     setTag(newTag);
   };
-  const filteredProjects = projectData.filter((project) =>
-    project.tag.includes(tag)
-  );
+
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
@@ -91,12 +62,13 @@ const ProjectSection = () => {
           >
             <ProjectCard
               key={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              tags={project.tag}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
+              project={project}
+              // title={project.title}
+              // description={project.description}
+              // imgUrl={project.image}
+              // tags={project.tag}
+              // gitUrl={project.gitUrl}
+              // previewUrl={project.previewUrl}
             />
           </motion.li>
         ))}

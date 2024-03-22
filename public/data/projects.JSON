@@ -1,0 +1,258 @@
+[
+	{
+		"id": 1,
+		"title": "CarGo",
+		"overview": "Elevate Your Shipping Experience",
+		"description": "In an era where efficiency meets innovation, the Car-Go app emerges as a beacon of creative industry prowess. Designed to streamline the package delivery process, Car-Go ingeniously connects individuals looking to send packages with drivers already heading in the same direction. This symbiotic relationship not only accelerates package transportation but also introduces a sustainable, cost-effective shipping solution.",
+		"image": "/images/projects/CarGo.png",
+		"tag": ["Shipping", "Mobile", "Startup"],
+		"gitUrl": "/",
+		"previewUrl": "/",
+		"themeColor": "#69c5b3",
+		"headerImage": "/images/projects/CargoFlat.png",
+		"challenge": "The Challenge - At the core of Car-Go's inception was a clear, compelling challenge: optimizing local package delivery by synergizing the paths of senders and drivers. This venture into uncharted territory required a delicate balance of efficiency, safety, and user connectivity. Our primary objective was to craft a solution that not only addressed these needs but also set new industry standards for reliability and user satisfaction.",
+		"userResearch": {
+			"summary": "User Research: A Foundation for Innovation - Before diving into design and development, it was crucial to understand the user landscape. Through a meticulous research strategy that included usability testing and interviews across a diverse age group, we uncovered critical insights into the shipping process's pain points and preferences. This foundation allowed us to tailor our approach to directly address the user's needs, setting the stage for the application's user-centric features.",
+			"strategy": "Conducted usability tests and interviews targeting users aged 18-80 with shipping process issues, utilizing an interview guide for consistent and controlled usability testing.",
+			"researchProcessLink": "/link-to-user-research-process",
+			"focusAreas": [
+				"Efficient shipping time",
+				"Environmental sustainability",
+				"Shipping uncommon items",
+				"Preventing loss or damage",
+				"Budget-friendly process"
+			]
+		},
+		"myRole": "The Role of UI/UX in Shaping CarGo - At the heart of Car-Go's development was a profound focus on the user interface and experience. Through extensive usability testing and feedback, we refined the app's flow and design, prioritizing clarity, ease of use, and aesthetic appeal. This phase was instrumental in translating Car-Go's core values into a tangible, intuitive user experience.",
+		"roles": ["UX Designer", "Researcher"],
+		"timeline": "6-week sprint as part of the Springboard UX/UI Design course",
+		"tools": ["Miro", "Figma", "Marvel"],
+		"designThinkingProcess": {
+			"summary": "Design Thinking: From Empathy to Solution - Adopting the Hasso Plattner Institute of Design at Stanford's five-stage model, our journey through Empathize, Define, Ideate, Prototype, and Test phases was guided by the insights gained from our empathy map. This iterative process not only highlighted the primary user challenges but also fostered innovative solutions that formed the bedrock of Car-Go's functionality.",
+			"stages": ["Empathise", "Define", "Ideate", "Prototype", "Test"],
+			"outcome": "Developed an Empathy Map to group similar ideas, identify main issues, and understand user perspectives deeply."
+		},
+		"solution": {
+			"summary": "Solutions for the Future of Shipping - Our commitment to enhancing the shipping experience led to the development of several key features, including a robust review and rating system, secure in-app messaging, dynamic pricing, comprehensive insurance options, and a strong emphasis on community guidelines and safety education. These elements, combined with a user-friendly app design and dedicated customer support, ensure that Car-Go represents the pinnacle of package delivery services.",
+			"features": [
+				"Review and rating system for trust and accountability",
+				"Secure in-app messaging for privacy",
+				"Dynamic pricing model for competitive rates",
+				"Insurance options for package protection",
+				"Community guidelines for ethical interactions",
+				"Safety education for best practices",
+				"User-friendly app design for ease of use",
+				"Responsive customer support",
+				"Sustainability initiatives for eco-friendly practices"
+			]
+		},
+		"userFlow": {
+			"scenarios": [
+				{
+					"flow": "Account",
+					"details": ["Login or register", "Existing user re-login"]
+				},
+				{
+					"flow": "Support",
+					"details": [
+						"Issues with shipping or delivery",
+						"Problems in activity or account pages"
+					]
+				},
+				{
+					"flow": "Shipment Order",
+					"details": [
+						"Ship or deliver an item",
+						"Bid and complete process",
+						"New user post or deliver item"
+					]
+				}
+			]
+		},
+		"usabilityTesting": {
+			"introduction": "Interviewed five target demographic users remotely for 25-30 minutes each.",
+			"findings": [
+				"Simplified login page without unnecessary sign-up section",
+				"Removed text button as credentials are not asked",
+				"First shipping page adjusted for courier use"
+			],
+			"improvements": "Enhancements made to action buttons, error handling, transitions, and introduced a review page based on user feedback."
+		},
+		"uiDesign": "Final screens designed in Figma, focusing on aligning with brand values and message, influenced by competition and design references.",
+		"conclusion": "A Journey of Growth and Discovery - Presenting the Car-Go project as part of my portfolio symbolizes more than just a successful design initiative; it represents a journey of learning, growth, and the relentless pursuit of excellence in UI/UX design. This case study serves as a testament to the power of user-centered design and its potential to transform industries. As I continue to explore the vast landscape of UI/UX, Car-Go stands as a milestone of my professional development and a reminder of the impact thoughtful design can have on the world.",
+		"acknowledgment": "Acknowledgments - Thank you for taking the time to explore the Car-Go case study. This project reflects not only my dedication to creating meaningful, user-centric design solutions but also my commitment to advancing the field of UI/UX design. I look forward to the opportunity to bring this level of innovation and dedication to your projects."
+	},
+	{
+		"id": 2,
+		"title": "Pocket",
+		"overview": "Elevating Subscription Management",
+		"description": "In the digital age, subscription services have become ubiquitous, offering convenience but also presenting a significant challenge: managing these subscriptions effectively. With a myriad of services, users often find themselves entangled in a web of recurring payments, some of which may no longer serve their needs. Recognizing this gap, 'Pocket' emerges as an innovative app designed to empower users by simplifying subscription management and financial oversight.",
+		"image": "/images/projects/PocketApp.png",
+		"tag": ["All", "Mobile"],
+		"gitUrl": "/",
+		"previewUrl": "https://uxfol.io/b0480975",
+		"themeColor": "#FF2E2E",
+		"headerImage": "/images/projects/PocketHeader.png",
+		"goals": [
+			"Empower users with comprehensive subscription management",
+			"Simplify financial tracking and enhance usability",
+			"Offer robust mobile application functionality",
+			"Implement automated cancellation and real-time tracking features"
+		],
+		"myRole": "As the UX designer, researcher, and usability test moderator, my journey was characterized by immersive research, iterative design, and continuous user feedback. This process was instrumental in crafting an app that addresses real user needs while presenting an intuitive, engaging user experience.",
+		"roles": ["UX Designer", "UX Researcher", "Usability Test Moderator"],
+		"timeline": {
+			"overall": "9 weeks",
+			"discoveryAndResearch": "2+ weeks",
+			"designAndTesting": "6 weeks"
+		},
+		"tools": ["Miro", "Figma", "World"],
+		"problem": "Challenge Unveiled - The primary challenge tackled by Pocket revolves around the user's struggle with tracking, managing, and cancelling subscriptions. Services often make cancellation cumbersome, leading to unnecessary expenditure. Moreover, the absence of a comprehensive and intuitive mobile app for subscription management exacerbates this issue, leaving users without a viable solution to monitor and optimize their subscription spending.",
+		"solution": {
+			"features": [
+				"Automated cancellation",
+				"Real-time tracking and notifications",
+				"Spending pattern analysis",
+				"Email integration for subscription detection",
+				"User-friendly mobile application",
+				"Gamification elements for engagement"
+			]
+		},
+		"research": {
+			"insights": "Research Insights - Extensive user interviews and competitive analysis highlighted the urgent need for a solution like Pocket. Key findings included a high frequency of subscription tracking among users, the desire for improved management tools, and the common issue of subscription fatigue.",
+			"methods": [
+				"Surveys and Questionnaires",
+				"User Interviews",
+				"User Testing"
+			],
+			"process": "Design Process Unfolded - From initial sketches to low-fidelity wireframes, the design journey was marked by iterative refinements and a keen focus on user navigation and accessibility. Features like the 'Upcoming Alert' bar and dashboard to-do lists were prioritized to enhance user engagement and ease of use.",
+			"findings": {
+				"trackSubscriptionFrequency": 70,
+				"easeOfSubscriptionManagement": 75,
+				"exhaustionLeadingToUnsubscription": 50,
+				"improvedSearchExperience": 85
+			}
+		},
+		"userFeedback": {
+			"challenges": [
+				"Complex cancellation processes",
+				"Incomplete subscription lists",
+				"Lack of robust mobile applications",
+				"Cost of premium features"
+			],
+			"expectations": [
+				"Ease of use",
+				"Comprehensive financial overview",
+				"Robust mobile application"
+			]
+		},
+		"criteria": "Conducted interviews with various stakeholders including technicians, facilities managers, and administrative staff, enriching the app's development with diverse insights.",
+		"interviewQuestions": [
+			"How do you currently keep track of your subscriptions?",
+			"What challenges have you encountered in managing your subscriptions?",
+			"How often do you manage your subscriptions on a mobile device?",
+			"Can you recall a specific instance where you forgot to cancel a subscription?",
+			"Do you prefer a mobile app or a web-based platform for managing subscriptions?",
+			"Feedback on existing subscription tracking apps?"
+		],
+		"designProcessSteps": [
+			"Sketching product screens",
+			"Prioritizing user navigation",
+			"Designing the Upcoming Alert bar and notification system",
+			"Including a to-do list on the dashboard"
+		],
+		"guerrillaUsabilityTesting": {
+			"overview": "Usability Testing Revelations - Feedback from guerrilla usability testing was pivotal in refining the app's design. Users appreciated the quick cancellation feature and expressed a need for visible upcoming payment due dates, underscoring the importance of clear, actionable information within the app.",
+			"objective": "Observe participants and assess the user-friendliness of designs, identifying potential design issues.",
+			"findings": [
+				"Positive feedback on quick cancellation feature",
+				"Desire for visibility of upcoming payment due dates",
+				"Appreciation for the app's ability to fit seamlessly into busy lifestyles",
+				"Confusion over the top profile bar on the 'Messages' page",
+				"Inquiries about the functionality of navigation bars"
+			]
+		},
+		"wireframes": "Developed low-fidelity wireframes focusing on functionality and content structure, facilitating swift iterations and feedback cycles.",
+		"logoDesign": "Designed a logo that reflects timing and saving concepts, aligning with the app's core functionality.",
+		"conclusion": "Pocket represents a journey of discovery, innovation, and user-centered design. This project underscored the importance of flexibility, openness to new tools, and the continuous evolution of design concepts. As I reflect on the development of Pocket, the lessons learned extend beyond design principles to the core philosophy of adapting to user needs and fostering continuous improvement.",
+		"acknowledgment": "Acknowledgments - Thank you for exploring the Pocket case study. This journey reflects not only a commitment to solving complex user challenges but also a dedication to advancing the field of UX design. I look forward to bringing this level of innovation and user focus to future projects."
+	},
+	{
+		"id": 3,
+		"title": "House2Home",
+		"overview": "Transforming Spaces with Starter Kits",
+		"description": "In the digital age, the influence of online interior design has never been more prominent. House2Home addresses the modern dilemma of bridging the gap between virtual inspiration and real-world application. Catering to the newly relocated and those venturing into fresh living spaces, House2Home specializes in turning inspiration into reality. Our platform uniquely focuses on smaller decor items, providing an affordable gateway to personalized interior design through our innovative 'starter kit' concept.",
+		"image": "/images/projects/House2Home.png",
+		"tag": ["E-commerce", "Interior Design", "UX/UI Design"],
+		"gitUrl": "/",
+		"previewUrl": "https://uxfol.io/project/02c5d134",
+		"themeColor": "#A5D6A7",
+		"headerImage": "/images/projects/House2HomeHeader.png",
+		"problem": "At the heart of House2Home's mission lies a common predicament: the hesitation and difficulty in visualizing how selected decor pieces will integrate into new environments. Our users, equipped with clear style preferences and budget constraints, often find themselves at a loss on how to confidently navigate their home decor journey. The introduction of the 'starter kit' aims to dissolve these barriers, offering a handpicked selection of decor that guarantees a harmonious blend with their existing space.",
+		"goals": [
+			"Personalized Curation: Align decor selection with individual style and preferences",
+			"Inspirational Growth: Encourage the gradual expansion of home decor collection",
+			"Professional Experience: Mimic the experience of working with a professional interior designer"
+		],
+		"myRole": "As a UX designer and researcher, I steered the project through each phase of the Design Sprint. From mapping out the initial problem to sketching, deciding on a direction, prototyping, and ultimately testing our solution, my role was pivotal in translating user needs into a tangible, impactful feature.",
+		"roles": ["UX Designer", "Researcher"],
+		"timeline": "5 Day Modified Design Sprint",
+		"tools": ["Miro", "Figma", "Marvel"],
+		"designProcess": {
+			"description": "Leveraging tools such as Miro, Figma, and Marvel, the project embarked on a 5-day modified Design Sprint, inspired by the Google Ventures framework. This rapid, risk-mitigated approach enabled us to conceptualize, prototype, and test the 'starter kit' feature, ensuring it resonated well with our target demographic.",
+			"steps": [
+				{
+					"day": 1,
+					"focus": "Mapping",
+					"activities": "Identify and understand the core problem and sketch potential solutions."
+				},
+				{
+					"day": 2,
+					"focus": "Sketching",
+					"activities": "Engage in creative exercises like Crazy 8's to explore a wide range of ideas."
+				},
+				{
+					"day": 3,
+					"focus": "Deciding",
+					"activities": "Select the most viable solution for development and create detailed storyboards."
+				},
+				{
+					"day": 4,
+					"focus": "Prototyping",
+					"activities": "Develop a high-fidelity prototype of the chosen solution."
+				},
+				{
+					"day": 5,
+					"focus": "Testing",
+					"activities": "Conduct user tests to gather feedback and refine the prototype."
+				}
+			]
+		},
+		"solution": {
+			"description": "Innovative Solutions - The 'starter kit' concept emerged as a dynamic solution, allowing users to visualize potential purchases within their space. This immersive feature not only aids in decision-making but also significantly reduces the apprehension associated with online decor shopping. Through active participation, users can select items that resonate with their style and see firsthand how these choices transform their spaces.",
+			"features": [
+				"3D visualization of decor items in user's space",
+				"Curated 'starter kit' selections tailored to user preferences"
+			]
+		},
+		"userTestingFindings": {
+			"feedback": [
+				"Enhance logo elegance and improve UI for better visibility",
+				"Introduce swipeable images on product pages",
+				"Revise cart and checkout pages for clearer user interactions"
+			],
+			"improvements": "Implemented UI adjustments for improved navigation and interaction, and planned for further design expansion to include more interior design styles."
+		},
+		"conclusion": "The Design Sprint revealed the efficacy of the 'starter kit' concept in enhancing user confidence and satisfaction. By the sprint’s end, we had not only validated the idea but also identified opportunities for further refinement. This project underscores the potential of thoughtful UX design in briditing the gap between digital inspiration and tangible home transformation. House2Home now stands as a testament to the power of design thinking in solving complex consumer challenges. Our journey from ideation to testing has paved the way for a service that not only meets but anticipates user needs, setting a new standard for online interior design platforms."
+	},
+	{
+		"id": 4,
+		"title": "REFit",
+		"overview": "REFit Refrigerant Management is a record keeping software",
+		"description": "REFit Refrigerant Management, designed by HVAC/R technicians for their specific needs, streamlines record-keeping for refrigerant usage. As a regulated substance, it mandates the completion of an ODS/ODP paper form to ensure responsible usage and minimize environmental impact.",
+		"image": "/images/projects/REFit.png",
+		"tag": ["All", "Mobile"],
+		"gitUrl": "/",
+		"previewUrl": "/"
+	}
+]

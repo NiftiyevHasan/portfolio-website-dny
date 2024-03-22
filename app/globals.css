@@ -15,6 +15,53 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.modal-content {
+  @apply fixed inset-0 z-40;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start; /* Align items from the top */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-content.show {
+  opacity: 1;
+}
+/* Close button styling */
+.close-button {
+  @apply fixed top-3 right-3 p-3; /* Initial position and padding */
+  border-radius: 15%; /* Rounded corners */
+  border: 2px solid white; /* Border styling */
+  background-color: rgba(255, 255, 255, 0.2); /* Background with opacity */
+  transition: background-color 0.3s; /* Transition for hover effect */
+
+  /* Adjust position and size for mobile screens */
+  @apply sm:top-[10%] sm:right-[4%] sm:p-1;
+  /* Adjust position for medium screens */
+  @apply md:top-[12%] md:right-[2%] md:p-2;
+
+  /* Adjust position for larger screens */
+  @apply lg:top-[8%] lg:right-[2%];
+}
+
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Hover effect */
+}
+
+.close-button-icon {
+  @apply h-16 w-16; /* Icon size for base */
+  color: white; /* Icon color */
+
+  /* Adjust icon size for different screens */
+  @apply sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14;
+}
+.no-scroll {
+  overflow: hidden;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +71,5 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  min-height: 100vh; /* Ensure full viewport coverage */
 }
