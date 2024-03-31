@@ -1,14 +1,25 @@
 import React, { useState } from "react";
 import ModalPortal from "./ModalPortal";
 import ProjectDetails from "./ProjectDetails";
+import ProtectedProjectModal from "./ProtectedProjectModal";
 import Link from "next/link";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/solid";
 
 const ProjectCard = ({ project }) => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [isProtectedOpen, setIsProtectedOpen] = useState(false);
 
-	const handleOpen = () => setIsOpen(true);
-	const handleClose = () => setIsOpen(false);
+	const handleOpen = () => {
+		if (project.isProtected) {
+			setIsProtectedOpen(true);
+		} else {
+			setIsOpen(true);
+		}
+	};
+	const handleClose = () => {
+		setIsOpen(false);
+		setIsProtectedOpen(false);
+	};
 	return (
 		<div>
 			<div
@@ -44,6 +55,9 @@ const ProjectCard = ({ project }) => {
 								/>
 							</div>
 						</ModalPortal>
+					)}
+					{isProtectedOpen && (
+						<ProtectedProjectModal project={project} onClose={handleClose} />
 					)}
 				</div>
 			</div>
