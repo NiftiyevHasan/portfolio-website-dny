@@ -28,13 +28,14 @@ const ProtectedProjectModal = ({ project, onClose }) => {
 		event.preventDefault();
 		toast.error("You do not have permission to view this project.", {
 			className: "custom-toast",
-			position: "top-center",
+			position: "bottom-center",
 			autoClose: 5000,
 			hideProgressBar: false,
 			closeOnClick: true,
 			pauseOnHover: true,
 			draggable: true,
 			progress: undefined,
+			toastId: "unique-error-id",
 		});
 	};
 
