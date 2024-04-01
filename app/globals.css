@@ -82,3 +82,45 @@ body {
 		rgb(var(--background-start-rgb));
 	min-height: 100vh; /* Ensure full viewport coverage */
 }
+
+/* toast styles */
+.custom-toast {
+	background-color: rgba(
+		0,
+		0,
+		0,
+		0.5
+	) !important; /* Transparent black background */
+	color: white !important; /* White text */
+	padding: 0.5rem 1rem !important; /* Tailwind p-2 equivalent */
+	border-radius: 0.375rem !important; /* Tailwind rounded-md equivalent */
+	max-width: 100% !important;
+}
+
+@media (min-width: 640px) {
+	/* Tailwind sm: breakpoint */
+	.custom-toast {
+		max-width: 90% !important;
+	}
+}
+
+@media (min-width: 768px) {
+	/* Tailwind md: breakpoint */
+	.custom-toast {
+		max-width: 80% !important;
+	}
+}
+
+@media (min-width: 1024px) {
+	/* Tailwind lg: breakpoint */
+	.custom-toast {
+		max-width: 70% !important;
+	}
+}
+
+@media (min-width: 1280px) {
+	/* Tailwind xl: breakpoint */
+	.custom-toast {
+		max-width: 60% !important;
+	}
+}

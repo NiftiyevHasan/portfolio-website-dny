@@ -2,10 +2,9 @@
 import Link from "next/link";
 import React from "react";
 import NavLink from "./NavLink";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
-import Image from "next/image";
 import { motion } from "framer-motion";
 const navLinks = [
 	{
@@ -23,16 +22,34 @@ const navLinks = [
 ];
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
+	const [isShrunk, setIsShrunk] = useState(false);
+
 	const variants = {
 		open: { opacity: 1, x: 0 },
 		closed: { opacity: 0, x: "-100%" },
 	};
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsShrunk(window.scrollY > 50);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 	return (
-		<nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-50 w-full bg-[#121212] bg-opacity-90">
+		<nav
+			className={`fixed mx-auto top-0 left-0 right-0 z-50 w-full bg-[#121212] bg-opacity-90 transition-all duration-300 ${
+				isShrunk ? "text-xs py-0" : "text-lg lg:py-4 py-2"
+			} `}
+		>
 			<div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
 				<Link
 					href={"/"}
-					className="text-2xl md:text-5xl text-white font-semibold"
+					className={`text-xl md:text-3xl font-semibold transition-all duration-300 ${
+						isShrunk ? "scale-75" : "scale-125"
+					}`}
 				>
 					<span className="stroke-cyan-500 text-white border border-white rounded-md px-2 py-1 mt-4 mb-4">
 						DU
@@ -67,13 +84,17 @@ const Navbar = () => {
 					>
 						{navLinks.map((link, index) => (
 							<li key={index}>
-								<NavLink href={link.path} title={link.title} />
+								<NavLink
+									href={link.path}
+									title={link.title}
+									isShrunk={isShrunk}
+								/>
 							</li>
 						))}
 					</ul>
 				</motion.div>
 			</div>
-			{navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+			{navbarOpen && <MenuOverlay links={navLinks} />}
 		</nav>
 	);
 };

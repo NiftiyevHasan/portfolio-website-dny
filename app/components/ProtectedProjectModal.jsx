@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { LockClosedIcon } from "@heroicons/react/24/outline";
 
 const ProtectedProjectModal = ({ project, onClose }) => {
 	const [password, setPassword] = useState("");
@@ -26,6 +27,7 @@ const ProtectedProjectModal = ({ project, onClose }) => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		toast.error("You do not have permission to view this project.", {
+			className: "custom-toast",
 			position: "top-center",
 			autoClose: 5000,
 			hideProgressBar: false,
@@ -44,7 +46,7 @@ const ProtectedProjectModal = ({ project, onClose }) => {
 				</button>
 				<div className="flex flex-col items-center">
 					<h3 className="font-semibold text-lg text-gray-900 dark:text-white mb-4">
-						Enter Password
+						<LockClosedIcon className="h-10 w-10" />
 					</h3>
 					<form onSubmit={handleSubmit} className="w-full">
 						<input
@@ -56,7 +58,7 @@ const ProtectedProjectModal = ({ project, onClose }) => {
 						/>
 						<button
 							type="submit"
-							className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+							className="w-full py-2 bg-gray text-white bg-transparent rounded-lg hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
 						>
 							Submit
 						</button>
