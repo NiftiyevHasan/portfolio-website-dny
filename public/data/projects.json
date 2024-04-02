@@ -10,7 +10,11 @@
 		"gitUrl": "/",
 		"previewUrl": "/",
 		"themeColor": "#69c5b3",
+		"primaryColor": "#dbfff8",
+		"secondaryColor": "#FFF",
 		"headerImage": "/images/projects/CargoFlat.png",
+		"challengesHeader": "Problems",
+		"goalsHeader": "Goals",
 		"challenge": "The Challenge - At the core of Car-Go's inception was a clear, compelling challenge: optimizing local package delivery by synergizing the paths of senders and drivers. This venture into uncharted territory required a delicate balance of efficiency, safety, and user connectivity. Our primary objective was to craft a solution that not only addressed these needs but also set new industry standards for reliability and user satisfaction.",
 		"userResearch": {
 			"summary": "User Research: A Foundation for Innovation - Before diving into design and development, it was crucial to understand the user landscape. Through a meticulous research strategy that included usability testing and interviews across a diverse age group, we uncovered critical insights into the shipping process's pain points and preferences. This foundation allowed us to tailor our approach to directly address the user's needs, setting the stage for the application's user-centric features.",
@@ -94,6 +98,8 @@
 		"gitUrl": "/",
 		"previewUrl": "https://uxfol.io/b0480975",
 		"themeColor": "#FF2E2E",
+		"primaryColor": "#ffd0d0",
+		"secondaryColor": "#ffdede",
 		"headerImage": "/images/projects/cargo1.png",
 		"goals": [
 			"Empower users with comprehensive subscription management",
@@ -109,7 +115,9 @@
 			"designAndTesting": "6 weeks"
 		},
 		"tools": ["Miro", "Figma", "World"],
-		"problem": "Challenge Unveiled - The primary challenge tackled by Pocket revolves around the user's struggle with tracking, managing, and cancelling subscriptions. Services often make cancellation cumbersome, leading to unnecessary expenditure. Moreover, the absence of a comprehensive and intuitive mobile app for subscription management exacerbates this issue, leaving users without a viable solution to monitor and optimize their subscription spending.",
+		"challengesHeader": "Problems",
+		"goalsHeader": "Goals",
+		"challenges": "Challenge Unveiled - The primary challenge tackled by Pocket revolves around the user's struggle with tracking, managing, and cancelling subscriptions. Services often make cancellation cumbersome, leading to unnecessary expenditure. Moreover, the absence of a comprehensive and intuitive mobile app for subscription management exacerbates this issue, leaving users without a viable solution to monitor and optimize their subscription spending.",
 		"solution": {
 			"features": [
 				"Automated cancellation",
@@ -189,8 +197,12 @@
 		"tag": ["E-commerce", "Interior Design", "UX/UI Design"],
 		"gitUrl": "/",
 		"previewUrl": "https://uxfol.io/project/02c5d134",
-		"themeColor": "#A5D6A7",
+		"themeColor": "#B58D56",
+		"primaryColor": "#edc49e",
+		"secondaryColor": "#ffdcc4",
 		"headerImage": "/images/projects/House2HomeHeader.png",
+		"problemsHeader": "Problems",
+		"goalsHeader": "Goals",
 		"problem": "At the heart of House2Home's mission lies a common predicament: the hesitation and difficulty in visualizing how selected decor pieces will integrate into new environments. Our users, equipped with clear style preferences and budget constraints, often find themselves at a loss on how to confidently navigate their home decor journey. The introduction of the 'starter kit' aims to dissolve these barriers, offering a handpicked selection of decor that guarantees a harmonious blend with their existing space.",
 		"goals": [
 			"Personalized Curation: Align decor selection with individual style and preferences",
@@ -257,6 +269,9 @@
 		"image": "/images/projects/REFit.png",
 		"tag": ["All", "Mobile"],
 		"gitUrl": "/",
-		"previewUrl": "/"
+		"previewUrl": "/",
+		"themeColor": "#69c5b3",
+		"primaryColor": "pocketPrimary",
+		"secondaryColor": "pocketSecondary"
 	}
 ]

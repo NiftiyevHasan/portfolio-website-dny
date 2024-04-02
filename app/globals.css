@@ -31,7 +31,7 @@
 	opacity: 1;
 }
 .modal-inner-content {
-	@apply max-w-screen-2xl mx-auto p-4;
+	@apply max-w-screen-2xl mx-auto p-4 mt-14;
 }
 /* Close button styling */
 .close-button {

@@ -126,7 +126,7 @@ const AboutSection = () => {
 								<motion.li
 									key={index}
 									variants={itemVariants}
-									className="mb-2 hover:scale-110 hover:text-brighter transition-transform duration-100 hover:z-10"
+									className="mb-3 hover:scale-110 hover:text-brighter transition-transform duration-100 hover:z-10"
 									whileHover={{
 										scale: 1.1,
 										zIndex: 10,

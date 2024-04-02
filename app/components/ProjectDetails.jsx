@@ -4,10 +4,11 @@ import ProjectDetailSection from "./ProjectDetailSection";
 
 const ProjectDetails = ({ project, onClose }) => {
 	const attributes = [
-		["title", "overview", "headerImage"],
-		["description", "tools", "anotherimage"],
-		["problems", "goals", "headerImage"],
-		["myRole", "roles", "anotherimage2"],
+		["title", "description", "headerImage"],
+		["overview", "tools", "anotherimage"],
+		["challengesHeader", "challenges", "headerImage"],
+		["goalsHeader", "goals", "headerImage"],
+		["roles", "myRole", "anotherimage2"],
 		["conclusion", "acknowledgment", "headerImage"],
 		// Add more attribute sets as needed
 	];
@@ -44,6 +45,9 @@ const ProjectDetails = ({ project, onClose }) => {
 								? project[attrSet[1]]
 								: project[attrSet[1]],
 							image: project[attrSet[2]],
+							bgColor:
+								index % 2 === 0 ? project.primaryColor : project.secondaryColor,
+							mainColor: project.themeColor,
 						};
 
 						return (
